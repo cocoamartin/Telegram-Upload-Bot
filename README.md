@@ -5,9 +5,6 @@
 A Telegram Url (and youtube-dl) Uploader based on [Pyrogram](https://github.com/pyrogram/pyrogram)
 
 # Benefits :-
-    ✓ Google Drive link cloning using gclone.(wip)
-    ✓ Telegram File mirrorring to cloud along with its unzipping, unrar and untar
-    ✓ Drive/Teamdrive support/All other cloud services rclone.org supports
     ✓ Unzip
     ✓ Unrar
     ✓ Untar
@@ -15,17 +12,13 @@ A Telegram Url (and youtube-dl) Uploader based on [Pyrogram](https://github.com/
     ✓ Custom commands
     ✓ Get total size of your working cloud directory
     ✓ You can also upload files downloaded from /ytdl command to gdrive using `/ytdl gdrive` command.
-    ✓ You can also deploy this on your VPS
     ✓ Option to select either video will be uploaded as document or streamable
     ✓ Added /renewme command to clear the downloads which are not deleted automatically.
     ✓ Added support for youtube playlist 😐
-    ✓
     
-# TO-DO
--   ~Gdrive file clonning using Gclone~ `DONE ✓`
--   [ ] Adding mp3 files support while playlist downloading.
--   [ ] Password support while Unarchiving the files.
--   [ ] Selection of required files during leeching the big files using aria(/leech command)
+    - ~Removed Torrent Support~ 
+    - ~Removed Rclone and Gclone Support~
+    
 
 ### Credit goes to SpEcHiDe for his Publicleech repo.
 
