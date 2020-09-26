@@ -1,12 +1,12 @@
 {
-  "name": "Telegram Torrent Leecher",
-  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @torrentleechgdrivesupport!",
+  "name": "Telegram Url Uploader",
+  "description": "A Telegram Url (and youtube-dl) Upload Bot based on Pyrogram. Maintained by @vipingupta_1 !",
   "keywords": [
     "telegram"
   ],
-  "repository": "https://github.com/gautamajay52/TorrentLeech-Gdrive",
-  "success_url": "https://t.me/torrentleechgdrivesupport",
-  "website": "https://github.com/gautamajay52/TorrentLeech-Gdrive",
+  "repository": "https://github.com/gupta-vipin/Telegram-Upload-Bot",
+  "success_url": "https://t.me/thecinemajunkies",
+  "website": "https://github.com/gupta-vipin/Telegram-Upload-Bot",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
@@ -41,18 +41,9 @@
       "value": "128",
       "required": false
     },
-    "ARIA_TWO_STARTED_PORT": {
-      "description": "should be an integer. The port on which aria2c daemon must start, and keep listening.",
-      "value": "6800",
-      "required": false
-    },
     "EDIT_SLEEP_TIME_OUT": {
       "description": "should be an integer. Number of seconds to wait before editing a message.",
-      "value": "15",
-      "required": false
-    },
-    "MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START": {
-      "description": "should be an integer. Number of seconds to wait before cancelling a torrent.",
+      "value": "5",
       "required": false
     },
     "FINISHED_PROGRESS_STR": {
@@ -61,10 +52,6 @@
     },
     "UN_FINISHED_PROGRESS_STR": {
       "description": "should be a single character.",
-      "required": false
-    },
-    "TG_OFFENSIVE_API": {
-      "description": "should be an URL accepting the FormParams {i}, {m}, and {t}",
       "required": false
     },
     "LEECH_COMMAND": {
