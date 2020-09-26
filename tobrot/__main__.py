@@ -33,16 +33,15 @@ from tobrot import (
     SAVE_THUMBNAIL,
     CLEAR_THUMBNAIL,
     PYTDL_COMMAND_G,
-    LOG_COMMAND,
-    CLONE_COMMAND_G
+    LOG_COMMAND
 )
 
 from pyrogram import Client, filters
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 
 from tobrot.plugins.new_join_fn import new_join_f, help_message_f, rename_message_f
-from tobrot.plugins.incoming_message_fn import incoming_message_f, incoming_youtube_dl_f, incoming_purge_message_f, incoming_gdrive_message_f, g_yt_playlist, g_clonee
-from tobrot.plugins.rclone_size import check_size_g, g_clearme
+from tobrot.plugins.incoming_message_fn import incoming_message_f, incoming_youtube_dl_f, incoming_purge_message_f, incoming_gdrive_message_f, 
+from tobrot.plugins.rclone_size import check_size_g
 from tobrot.plugins.status_message_fn import (
     status_message_f,
     cancel_message_f,
@@ -77,29 +76,11 @@ if __name__ == "__main__" :
     )
     app.add_handler(incoming_message_handler)
     #
-    incoming_gdrive_message_handler = MessageHandler(
-        incoming_gdrive_message_f,
-        filters=filters.command([f"{GLEECH_COMMAND}"]) & filters.chat(chats=AUTH_CHANNEL)
-    )
-    app.add_handler(incoming_gdrive_message_handler)
-    #
-    incoming_telegram_download_handler = MessageHandler(
-        down_load_media_f,
-        filters=filters.command([f"{TELEGRAM_LEECH_COMMAND_G}"]) & filters.chat(chats=AUTH_CHANNEL)
-    )
-    app.add_handler(incoming_telegram_download_handler)
-    #
     incoming_purge_message_handler = MessageHandler(
         incoming_purge_message_f,
         filters=filters.command(["purge"]) & filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_purge_message_handler)
-    #
-    incoming_clone_handler = MessageHandler(
-        g_clonee,
-        filters=filters.command([f"{CLONE_COMMAND_G}"]) & filters.chat(chats=AUTH_CHANNEL)
-    )
-    app.add_handler(incoming_clone_handler)
     #
     incoming_size_checker_handler = MessageHandler(
         check_size_g,
