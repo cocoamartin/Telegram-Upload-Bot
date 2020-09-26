@@ -36,7 +36,8 @@ A Telegram Url (and youtube-dl) Uploader based on [Pyrogram](https://github.com/
 
 
 ## Credits, and Thanks to
-* [GautamKumar(me)](https://github.com/gautamajay52/TorrentLeech-Gdrive) 😬
+* [Vipin Gupta (me)](https://telegram.dog/vipingupta_1) 😬
+* [GautamKumar](https://github.com/gautamajay52/TorrentLeech-Gdrive) 
 * [SpEcHiDe](https://github.com/SpEcHiDe/PublicLeech) for his wonderful code😚
 * [Rclone Team](https://rclone.org) for theirs awesome tool☁️
 * [Dan Tès](https://telegram.dog/haskell) for his [Pyrogram Library](https://github.com/pyrogram/pyrogram)
