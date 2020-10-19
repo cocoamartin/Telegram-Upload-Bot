@@ -4,9 +4,9 @@
   "keywords": [
     "telegram"
   ],
-  "repository": "https://github.com/gupta-vipin/Telegram-Upload-Bot",
+  "repository": "https://github.com/cocoamartin/Telegram-Upload-Bot",
   "success_url": "https://t.me/thecinemajunkies",
-  "website": "https://github.com/gupta-vipin/Telegram-Upload-Bot",
+  "website": "https://github.com/cocoamartin/Telegram-Upload-Bot",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
